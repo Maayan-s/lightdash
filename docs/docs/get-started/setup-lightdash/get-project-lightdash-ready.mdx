@@ -14,7 +14,7 @@ But, before you hook up your dbt project to Lightdash, we want to make sure it's
 
 :::tip
 
-**New to dbt?** If you haven't used dbt before, [follow dbt's getting started guide](https://docs.getdbt.com/tutorial/setting-up) 
+**New to dbt?** If you haven't used dbt before, [follow dbt's getting started guide](https://docs.getdbt.com/tutorial/setting-up)
 before proceeding with setting up Lightdash.
 
 :::
@@ -23,7 +23,7 @@ before proceeding with setting up Lightdash.
 
 Tables are the starting point to any data exploration in Lightdash - they're the data in Lightdash that you can query. The beauty of Lightdash is that we're pretty well synced with your dbt project. So, in Lightdash, Tables actually come from dbt models that have been defined in your dbt project's `.yml` files.
 
-If your dbt model has been defined in a .yml file, it will appear in Lightdash as a Table. 
+If your dbt model has been defined in a .yml file, it will appear in Lightdash as a Table.
 
 :::tip
 
@@ -54,7 +54,7 @@ npm install -g @lightdash/cli
 
 
   ```shell
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" # install homebrew if you don't have it
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/scripts/setup-docker.sh)" # install homebrew if you don't have it
   brew install unixodbc
   npm install -g @lightdash/cli
   ```
@@ -87,8 +87,8 @@ cloud users in the US would type `lightdash login https://app.lightdash.cloud` i
 
 <details>
   <summary>2. If you use single sign-on (SSO) in the browser, login with a personal access token.</summary>
-  First, you'll need to create a new personal access token in the UI by going to Settings > Personal Access Tokens. 
-  You can't use an existing personal access token! You have to create a new one just for yourself.  
+  First, you'll need to create a new personal access token in the UI by going to Settings > Personal Access Tokens.
+  You can't use an existing personal access token! You have to create a new one just for yourself.
 
   <img src={PersonalAccessToken} width="1304" height="517" style={{display: "block", margin: "0 auto 20px auto"}}/>
 
@@ -176,7 +176,7 @@ For example, if we have a `projects.yml` file, we'd have a Table called `Project
   lightdash dbt run
   ```
 
-  This command will run + generate tables for all of the models with `.yml` files. It will also generate dimensions for all of the columns in your dbt project. 
+  This command will run + generate tables for all of the models with `.yml` files. It will also generate dimensions for all of the columns in your dbt project.
 </details>
 
 ---
